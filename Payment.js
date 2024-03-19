@@ -9,7 +9,7 @@
 var server = require('server');
 
 // dw imports
-var Site = require('dw/system/Site');
+
 var OrderMgr = require('dw/order/OrderMgr');
 var Resource = require('dw/web/Resource');
 var customLogger = require('*/cartridge/scripts/helpers/commonHelpers').customLogger;
