@@ -33,7 +33,7 @@ server.get('IPay88Show', server.middleware.https, function (req, res, next) {
     var iPay88Helpers = require('*/cartridge/scripts/helpers/payment/iPay88Helpers');
     var viewData = res.getViewData();
     if (!req.querystring.orderNo) {
-        viewData.error = true;
+       // viewData.error = true;
         viewData.errorMessage = Resource.msg('invalid.request', 'payment', null);
     } else {
         var iPay88Config = JSON.parse(Site.getCurrent().getCustomPreferenceValue("iPay88Config"));
